@@ -22,7 +22,7 @@ const TimeTable = () => {
         <div className="contact-text-inner-div col-6 px-3 ">
           <h3 className="">Repair and Maintenance</h3>
           <p>
-            City Lord property management is separate from lettings office.For
+            Citi Lord property management is separate from lettings office.For
             any kind of repairs please report a problem through our website
             repairs. if you call to lettings department they wont be able to
             help. but we always recommend you to report the problem via our

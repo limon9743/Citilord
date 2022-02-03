@@ -9,7 +9,7 @@ const EnquiriesReference = () => {
           <div className="contact-text-inner-div col-6 me-3 px-3">
             <h3 className="text-center">Official Enquiries</h3>
             <p>
-              Please note that city lord ltd do not keep any existing tenants
+              Please note that citi lord ltd do not keep any existing tenants
               information after 1 month of tenancy termination. For any
               enquiries regarding council tax or information about present or
               existing tenants, please contact us
