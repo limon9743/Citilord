@@ -15,12 +15,13 @@
 
 .contact-wrapper {
   display: flex;
-
+  box-shadow: 1px 3px 7px #4e4e4e;
+  border-radius: 5px;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 20px 0px 0px 0px;
   padding: 20px;
   position: relative;
-  width: 100%;
+  width: 101.5%;
 }
 
 /* Left contact page */

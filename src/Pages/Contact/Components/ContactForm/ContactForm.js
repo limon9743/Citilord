@@ -5,7 +5,7 @@ const ContactForm = () => {
   return (
     <div>
       <section id="contact">
-        <h1 class="section-header">Contact</h1>
+        {/* <h1 class="section-header">Contact</h1> */}
 
         <div class="contact-wrapper">
           {/* <!-- Left contact page -->  */}

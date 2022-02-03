@@ -14,7 +14,7 @@ import {
 import SearchShortlet from "../../../Pages/Home/components/DialogSearchBox/SearchShortlet/SearchShortlet";
 import SearchLonglet from "../../../Pages/Home/components/DialogSearchBox/SearchLonglet/SearchLonglet";
 import SearchForSale from "../../../Pages/Home/components/DialogSearchBox/SearchForSale/SearchForSale";
-import { Close } from "@material-ui/icons";
+import { Cancel, Close } from "@material-ui/icons";
 
 const NavBar = () => {
   const [state, setState] = useState(false);
@@ -182,7 +182,7 @@ const NavBar = () => {
       >
         {<SearchShortlet event={toggleDrawer(false)} />}
         <div className="drawer-icon-container">
-          <Close className="drawer-icon" onClick={toggleDrawer(false)} />
+          <Cancel className="drawer-icon" onClick={toggleDrawer(false)} />
         </div>
       </Drawer>
       <Drawer
@@ -193,7 +193,7 @@ const NavBar = () => {
       >
         {<SearchLonglet event1={toggleDrawer1(false)} />}
         <div className="drawer-icon-container">
-          <Close className="drawer-icon" onClick={toggleDrawer1(false)} />
+          <Cancel className="drawer-icon" onClick={toggleDrawer1(false)} />
         </div>
       </Drawer>
       <Drawer
@@ -204,7 +204,7 @@ const NavBar = () => {
       >
         {<SearchForSale event2={toggleDrawer2(false)} />}
         <div className="drawer-icon-container">
-          <Close className="drawer-icon" onClick={toggleDrawer2(false)} />
+          <Cancel className="drawer-icon" onClick={toggleDrawer2(false)} />
         </div>
       </Drawer>
 

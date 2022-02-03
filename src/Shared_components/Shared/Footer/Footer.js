@@ -17,7 +17,16 @@ const Footer = () => {
                   <a href="#home">Home</a>
                 </li>
                 <li>
-                  <a href="#about">Property</a>
+                  <a href="#about">Sell</a>
+                </li>
+                <li>
+                  <a href="#about">Long Let</a>
+                </li>
+                <li>
+                  <a href="#about">Short Let</a>
+                </li>
+                <li>
+                  <a href="#p">Property Share</a>
                 </li>
                 <li>
                   <a href="#services">Landlord</a>
@@ -28,9 +37,7 @@ const Footer = () => {
                 <li>
                   <a href="#aboutt">About</a>
                 </li>
-                <li>
-                  <a href="#p">Property Share</a>
-                </li>
+
                 <li>
                   <a href="#e">Report Repair</a>
                 </li>
@@ -38,9 +45,6 @@ const Footer = () => {
                   <a href="https://www.gov.uk/find-energy-certificate">
                     EPC Check
                   </a>
-                </li>
-                <li>
-                  <a href="#l">Contact</a>
                 </li>
                 <li>
                   <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/942503/6.6642_MHCLG_How_to_Rent_v5.pdf">

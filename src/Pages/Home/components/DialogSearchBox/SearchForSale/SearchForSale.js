@@ -11,6 +11,7 @@ const SearchForSale = (props) => {
       <input
         placeholder="Search by postcode or station"
         className="search-input-div"
+        style={{ textAlign: "center" }}
       ></input>
       <Link to="/all-properties-for-sale" style={{ textDecoration: "none" }}>
         <div onClick={event2}>
@@ -25,7 +26,7 @@ const SearchForSale = (props) => {
               width: "150px",
             }}
           >
-            For Sale
+            Search
           </Button>
         </div>
       </Link>

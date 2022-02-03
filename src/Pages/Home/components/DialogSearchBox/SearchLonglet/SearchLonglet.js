@@ -13,6 +13,7 @@ const SearchLonglet = (props) => {
       <input
         placeholder="Search by postcode or station"
         className="search-input-div"
+        style={{ textAlign: "center" }}
       ></input>
       <Link to="/all-properties-long-let" style={{ textDecoration: "none" }}>
         <div onClick={event1}>
