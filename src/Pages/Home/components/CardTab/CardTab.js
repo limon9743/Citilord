@@ -31,7 +31,7 @@ const CardTab = (props) => {
         <TabList onChange={handleChange}>
           <Tab label="SHORT LET" value="1" className={classes.tabText} />
           <Tab label="LONG LET" value="2" className={classes.tabText} />
-          <Tab label="BUY" value="3" className={classes.tabText} />
+          <Tab label="SELL" value="3" className={classes.tabText} />
         </TabList>
 
         <TabPanel value="1">
