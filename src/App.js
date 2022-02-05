@@ -20,7 +20,8 @@ import ToRentProperties from "./Pages/ToRentProperties/Page/ShortLet/ToRentPrope
 import LongLet from "./Pages/ToRentProperties/Page/LongLet/LongLet";
 import ForSaleProperties from "./Pages/ForSaleProperties/Page/ForSaleProperties";
 import PropertyDetail from "./Pages/PropertyDetail/Page/PropertyDetail";
-
+import GalleryPage from "./Pages/Gallery/Page/GalleryPage";
+import AllTeamMembers from "./Pages/AllTeamMembers/Page/AllTeamMembers";
 const App = () => {
   return (
     <Router>
@@ -52,6 +53,8 @@ const App = () => {
           element={<ForSaleProperties />}
         ></Route>
         <Route path="/property-details" element={<PropertyDetail />}></Route>
+        <Route path="/gallery" element={<GalleryPage />}></Route>
+        <Route path="/all-team-members" element={<AllTeamMembers />}></Route>
       </Routes>
       <Footer />
     </Router>

@@ -1,9 +1,16 @@
-.img-carosel-each {
-  width: 100px;
-  height: 500px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  cursor: pointer;
+.carosel-and-info-main-div {
+  /* display: flex;
+  height: 500px; */
+}
+
+.carosel-div {
+  display: flex;
+}
+.carosel-image-each {
+}
+
+.basic-info-div {
+}
+
+.custom-image {
 }
