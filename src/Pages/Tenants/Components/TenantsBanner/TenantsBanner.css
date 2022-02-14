@@ -6,3 +6,9 @@
   height: 550px;
   background-size: cover;
 }
+
+@media screen and (max-width: 768px) {
+  .tenants-banner > img {
+    height: 200px;
+  }
+}

@@ -10,7 +10,7 @@ const ContactForm = () => {
         <div class="contact-wrapper">
           {/* <!-- Left contact page -->  */}
 
-          <form id="contact-form" class="form-horizontal" role="form">
+          <form id="contact-form" className="form-horizontal" role="form">
             <div class="form-group">
               <div class="col-sm-12">
                 <input
@@ -72,7 +72,7 @@ const ContactForm = () => {
             </button>
           </form>
 
-          {/*- Left contact page -*/}
+          {/*-  contact Right Container-*/}
 
           <div class="direct-contact-container">
             <ul class="contact-list">
@@ -83,21 +83,20 @@ const ContactForm = () => {
                   </span>
                 </i>
               </li>
-
-              <li class="list-item">
-                <i class="fa fa-phone fa-2x">
-                  <span class="contact-text phone">
-                    <a href="tel:02089804988" title="Give me a call">
-                      02089804988
-                    </a>
-                  </span>
-                </i>
-              </li>
               <li class="list-item">
                 <i class="fas fa-mobile-alt">
                   <span class="contact-text phone">
                     <a href="tel:07484190446" title="Give me a call">
                       07484190446 (Letting Enquiry)
+                    </a>
+                  </span>
+                </i>
+              </li>
+              <li class="list-item">
+                <i class="fa fa-phone fa-2x">
+                  <span class="contact-text phone">
+                    <a href="tel:02089804988" title="Give me a call">
+                      02089804988
                     </a>
                   </span>
                 </i>

@@ -129,3 +129,14 @@ td.text-center {
 td.text-right {
   text-align: right;
 }
+
+@media screen and (max-width: 768px) {
+  .contact-text-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-text-inner-div {
+    width: 100%;
+    margin: 0px auto 16px;
+  }
+}

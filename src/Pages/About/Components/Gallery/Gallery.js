@@ -22,7 +22,6 @@ const Gallery = () => {
               alt="person writing in a notebook beside by an iPad, laptop, printed photos, spectacles, and a cup of coffee on a saucer"
             />
           </div>
-
           <div className="gallery-item">
             <img
               className="gallery-image"
@@ -30,20 +29,19 @@ const Gallery = () => {
               alt="sunset behind San Francisco city skyline"
             />
           </div>
-
           <div className="gallery-item">
             <img
               className="gallery-image"
               src="https://images.unsplash.com/photo-1506045412240-22980140a405?w=500&h=500&fit=crop"
               alt="people holding umbrellas on a busy street at night lit by street lights and illuminated signs in Tokyo, Japan"
             />
-          </div>
+          </div>{" "}
+        </div>{" "}
+        <div className="pt-4 d-flex justify-content-center align-items-center">
+          <Link className="view-more-btn" to="/gallery">
+            <Button>View More</Button>
+          </Link>
         </div>
-      </div>
-      <div className="pt-4 d-flex justify-content-center">
-        <Link className="view-more-btn" to="/gallery">
-          <Button>View More</Button>
-        </Link>
       </div>
     </div>
   );

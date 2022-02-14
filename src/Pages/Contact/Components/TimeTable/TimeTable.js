@@ -14,12 +14,12 @@ const TimeTable = () => {
         management services, our friendly staff will be more than happy to offer
         their advice and expertise.
       </p>
-      <div className="contact-text-div d-flex ">
-        <div className="contact-text-inner-div col-6 me-3 px-3">
+      <div className="contact-text-div d-flex">
+        <div className="contact-text-inner-div col-lg-6 me-3  px-3">
           <h3 className="">Holiday Message</h3>
           <p></p>
         </div>
-        <div className="contact-text-inner-div col-6 px-3 ">
+        <div className="contact-text-inner-div col-lg-6  px-3 ">
           <h3 className="">Repair and Maintenance</h3>
           <p>
             Citi Lord property management is separate from lettings office.For
@@ -32,11 +32,11 @@ const TimeTable = () => {
       </div>
       <div className="contact-text-div d-flex mt-3">
         {/* map  */}
-        <div className="contact-text-inner-div col-6 me-3 px-3">
+        <div className="contact-text-inner-div col-lg-6 me-3   px-3">
           <Map></Map>
         </div>
         {/* table  */}
-        <div className="contact-text-inner-div col-6 px-3 pb-3">
+        <div className="contact-text-inner-div col-lg-6 px-3 pb-3">
           <h3 className="">Office Opening & Closing Time</h3>
           <table class="table-fill">
             <thead>

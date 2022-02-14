@@ -22,6 +22,8 @@ import ForSaleProperties from "./Pages/ForSaleProperties/Page/ForSaleProperties"
 import PropertyDetail from "./Pages/PropertyDetail/Page/PropertyDetail";
 import GalleryPage from "./Pages/Gallery/Page/GalleryPage";
 import AllTeamMembers from "./Pages/AllTeamMembers/Page/AllTeamMembers";
+import AllProperties from "./Pages/AllProperties/Page/AllProperties";
+
 const App = () => {
   return (
     <Router>
@@ -55,6 +57,7 @@ const App = () => {
         <Route path="/property-details" element={<PropertyDetail />}></Route>
         <Route path="/gallery" element={<GalleryPage />}></Route>
         <Route path="/all-team-members" element={<AllTeamMembers />}></Route>
+        <Route path="/all-properties" element={<AllProperties />}></Route>
       </Routes>
       <Footer />
     </Router>
