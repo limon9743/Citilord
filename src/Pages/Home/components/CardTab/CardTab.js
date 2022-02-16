@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./CardTab.css";
 import { TabContext, TabList, TabPanel } from "@material-ui/lab";
-import { makeStyles, Tab } from "@material-ui/core";
+import { Button, makeStyles, Tab } from "@material-ui/core";
 import Cards from "../Cards/Cards";
+import { Link } from "react-router-dom";
 
 const useStyle = makeStyles((theme) => ({
   tabText: {
@@ -76,6 +77,20 @@ const CardTab = (props) => {
       </TabContext>
 
       {/* Card Tab End*/}
+      <Link to="/all-properties" style={{ textDecoration: "none" }}>
+        <Button
+          style={{
+            width: "200px",
+            height: "50px",
+            color: "black",
+            fontWeight: "bold",
+            backgroundColor: "lightgreen",
+            marginBottom: "20px",
+          }}
+        >
+          View All Properties
+        </Button>
+      </Link>
     </div>
   );
 };

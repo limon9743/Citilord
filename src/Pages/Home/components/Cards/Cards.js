@@ -2,6 +2,7 @@ import { Badge } from "@material-ui/core";
 import { KingBed } from "@material-ui/icons";
 import React from "react";
 import "./Cards.css";
+import { Link } from "react-router-dom";
 
 const Cards = (props) => {
   return (
@@ -57,7 +58,9 @@ const Cards = (props) => {
           {/* bottom icon container end */}
 
           <a>
-            <button>View More</button>
+            <Link to="/single-property">
+              <button>View More</button>
+            </Link>
           </a>
         </div>
       </div>

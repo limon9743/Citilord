@@ -16,8 +16,8 @@ const Contact = () => {
         <ContactForm></ContactForm>
         {/* <Map></Map> */}
       </div>
-      <LandlordTanents></LandlordTanents>
-      <EnquiriesReference></EnquiriesReference>
+      {/* <LandlordTanents></LandlordTanents> */}
+      {/* <EnquiriesReference></EnquiriesReference> */}
     </div>
   );
 };
