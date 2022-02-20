@@ -77,20 +77,70 @@ const CardTab = (props) => {
       </TabContext>
 
       {/* Card Tab End*/}
-      <Link to="/all-properties" style={{ textDecoration: "none" }}>
-        <Button
-          style={{
-            width: "200px",
-            height: "50px",
-            color: "black",
-            fontWeight: "bold",
-            backgroundColor: "lightgreen",
-            marginBottom: "20px",
-          }}
-        >
-          View All Properties
-        </Button>
-      </Link>
+      {/* View All Property Button Start */}
+      <div style={{ display: "flex" }}>
+        <Link to="/all-properties/shortlet" style={{ textDecoration: "none" }}>
+          <Button
+            style={{
+              width: "250px",
+              height: "50px",
+              color: "black",
+              fontWeight: "bold",
+              backgroundColor: "lightgreen",
+              marginBottom: "20px",
+              marginLeft: "20px",
+            }}
+          >
+            View Short Let Properties
+          </Button>
+        </Link>
+        <Link to="/all-properties/longlet" style={{ textDecoration: "none" }}>
+          <Button
+            style={{
+              width: "250px",
+              height: "50px",
+              color: "black",
+              fontWeight: "bold",
+              backgroundColor: "lightgreen",
+              marginBottom: "20px",
+              marginLeft: "20px",
+            }}
+          >
+            View Long Let Properties
+          </Button>
+        </Link>
+        <Link to="/all-properties/sell" style={{ textDecoration: "none" }}>
+          <Button
+            style={{
+              width: "250px",
+              height: "50px",
+              color: "black",
+              fontWeight: "bold",
+              backgroundColor: "lightgreen",
+              marginBottom: "20px",
+              marginLeft: "20px",
+            }}
+          >
+            View Sell Properties
+          </Button>
+        </Link>
+        <Link to="/all-rooms" style={{ textDecoration: "none" }}>
+          <Button
+            style={{
+              width: "250px",
+              height: "50px",
+              color: "black",
+              fontWeight: "bold",
+              backgroundColor: "lightgreen",
+              marginBottom: "20px",
+              marginLeft: "20px",
+            }}
+          >
+            View All Rooms
+          </Button>
+        </Link>
+      </div>
+      {/* View All Property Button End */}
     </div>
   );
 };
