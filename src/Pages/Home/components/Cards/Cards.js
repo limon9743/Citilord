@@ -13,7 +13,7 @@ const Cards = (props) => {
         horizontal: "left",
       }}
       color="primary"
-      style={{ margin: "30px" }}
+      // style={{ margin: "30px" }}
     >
       <div className="card">
         <div className="img"></div>

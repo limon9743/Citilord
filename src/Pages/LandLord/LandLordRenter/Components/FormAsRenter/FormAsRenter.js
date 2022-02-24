@@ -112,7 +112,6 @@ const FormAsRenter = () => {
 
   const {
     register,
-
     formState: { errors },
     watch,
     setValue,
