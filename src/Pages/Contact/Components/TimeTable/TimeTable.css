@@ -15,6 +15,7 @@
   min-height: 200px;
 }
 .contact-text-inner-div {
+  padding: 10px;
   /* min-height: 100px; */
   border-radius: 5px;
   box-shadow: 1px 3px 7px #4e4e4e;
@@ -140,7 +141,18 @@
   text-align: right;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+  .contact-text-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-text-inner-div {
+    width: 100%;
+    margin: 0px auto 16px !important;
+  }
+}
+/* for tabs, mini laptop/monitor */
+@media only screen and (max-width: 992px) and (min-width: 768px) {
   .contact-text-div {
     flex-direction: column;
     align-items: center;

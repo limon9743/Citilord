@@ -6,20 +6,22 @@ import { Link } from "react-router-dom";
 
 const BannerButton = styled(Button)({
   textTransform: "capitalize",
+  fontSize: "16px",
+  margin: "0px 10px ",
+  padding: "10px 16px",
+  backgroundColor: "#03A404",
+  color: "white",
+});
+const BannerButton2 = styled(Button)({
+  textTransform: "capitalize",
   fontSize: 16,
   margin: "0px 10px ",
   padding: "10px 16px",
-  backgroundColor: "rgb(223, 152, 0)",
+  backgroundColor: "#FACC2E",
   color: "white",
 
   "&:hover": {
-    backgroundColor: "rgb(255,185,29)",
-  },
-  "&:nth-child(2)": {
-    backgroundColor: "rgb(0 110 18)",
-  },
-  "&:nth-child(2):hover": {
-    backgroundColor: "#449637",
+    backgroundColor: "#FACC2E",
   },
 });
 
@@ -38,12 +40,12 @@ const ContactBanner = () => {
               </BannerButton>
             </Link>
             <Link to={"/quick-response"} style={{ textDecoration: "none" }}>
-              <BannerButton
+              <BannerButton2
                 variant="contained"
                 style={{ color: "black", fontWeight: "bold" }}
               >
                 Quick-response
-              </BannerButton>
+              </BannerButton2>
             </Link>
           </div>
         </div>

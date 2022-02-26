@@ -65,7 +65,7 @@
   background-color: rgba(0, 0, 0, 0) !important;
 }
 .my-citi-lord-btn {
-  background-color: rgb(223, 171, 0);
+  background-color: #facc2e;
   color: rgb(49, 49, 49);
   font-weight: 700;
 }
@@ -91,5 +91,8 @@
   .my-citi-lord-btn {
     padding: 4px;
     font-size: 0.7rem;
+  }
+  .custom-nav-bar ul li {
+    margin-right: 15px;
   }
 }
