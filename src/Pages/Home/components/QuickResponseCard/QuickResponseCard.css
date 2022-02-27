@@ -1,6 +1,7 @@
 .fancy-cards {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
+  width: 100%;
 }
 .fancy-cards .fancy-card {
   display: inline-block;
@@ -8,8 +9,8 @@
   top: 40px;
   left: 20px;
   box-sizing: border-box;
-  padding-left: 50px;
-  padding-right: 50px;
+  /* padding-left: 50px;
+  padding-right: 50px; */
 }
 
 .fancy-card .top,
@@ -92,4 +93,13 @@
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
   border: 0px;
+}
+
+@media (max-width: 767px) {
+  .fancy-card {
+    width: 30%;
+  }
+  .fancy-cards {
+    margin: 0px;
+  }
 }
