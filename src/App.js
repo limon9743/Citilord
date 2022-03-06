@@ -31,6 +31,7 @@ import SingleRoom from "./Pages/SingleRoom/Page/SingleRoom";
 import AllRooms from "./Pages/AllRooms/AllRooms";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { UserProfile } from "./Pages/UserProfile/Page/UserProfile";
 const App = () => {
   useEffect(() => {
     AOS.init({
@@ -81,6 +82,7 @@ const App = () => {
         <Route path="/all-properties/sell" element={<SellPage />}></Route>
         <Route path="/single-room" element={<SingleRoom />}></Route>
         <Route path="/all-rooms" element={<AllRooms />}></Route>
+        <Route path="/user-profile" element={<UserProfile />}></Route>
       </Routes>
       <Footer />
     </Router>
