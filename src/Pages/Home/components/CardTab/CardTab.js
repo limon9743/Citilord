@@ -98,7 +98,7 @@ const CardTab = (props) => {
           //   marginLeft: "20px",
           // }}
           >
-            View Short Let Properties
+            View All Short Let Properties
           </Button>
         </Link>
         <Link to="/all-properties/longlet" style={{ textDecoration: "none" }}>
@@ -114,7 +114,7 @@ const CardTab = (props) => {
           //   marginLeft: "20px",
           // }}
           >
-            View Long Let Properties
+            View All Long Let Properties
           </Button>
         </Link>
         <Link to="/all-properties/sell" style={{ textDecoration: "none" }}>
@@ -129,7 +129,7 @@ const CardTab = (props) => {
           //   marginLeft: "20px",
           // }}
           >
-            View Sell Properties
+            View All Sell Properties
           </Button>
         </Link>
         <Link to="/all-rooms" style={{ textDecoration: "none" }}>

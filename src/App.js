@@ -32,6 +32,8 @@ import AllRooms from "./Pages/AllRooms/AllRooms";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { UserProfile } from "./Pages/UserProfile/Page/UserProfile";
+import Login from "./Pages/Login/Login";
+import Register from "./Pages/Register/Register";
 const App = () => {
   useEffect(() => {
     AOS.init({
@@ -83,6 +85,9 @@ const App = () => {
         <Route path="/single-room" element={<SingleRoom />}></Route>
         <Route path="/all-rooms" element={<AllRooms />}></Route>
         <Route path="/user-profile" element={<UserProfile />}></Route>
+
+        <Route path="/user-login" element={<Login />}></Route>
+        <Route path="/user-register" element={<Register />}></Route>
       </Routes>
       <Footer />
     </Router>
