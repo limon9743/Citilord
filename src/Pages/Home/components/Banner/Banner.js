@@ -236,6 +236,11 @@ const Banner = () => {
                   onChange={handleChange}
                   aria-label="simple tabs example"
                   backgroundColor="transparent"
+                  TabIndicatorProps={{
+                    style: {
+                      backgroundColor: "#1ead01",
+                    },
+                  }}
                 >
                   {/* <Tab
                     label={iconToolTipPlace()}

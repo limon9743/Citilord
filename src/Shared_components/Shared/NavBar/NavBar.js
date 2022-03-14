@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import "./NavBar.css";
-// import Logo from "../citiLordlogo.png.png";
 import Logo from "./citilordLogo.png";
 import { NavLink } from "react-router-dom";
-
 import {
   Avatar,
   Button,
@@ -17,11 +15,11 @@ import {
 import SearchShortlet from "../../../Pages/Home/components/DialogSearchBox/SearchShortlet/SearchShortlet";
 import SearchLonglet from "../../../Pages/Home/components/DialogSearchBox/SearchLonglet/SearchLonglet";
 import SearchForSale from "../../../Pages/Home/components/DialogSearchBox/SearchForSale/SearchForSale";
-import { CallMissedSharp, Cancel, Close } from "@material-ui/icons";
-import useFirebase from "../../../hooks/useFirebase";
+import { CallMissedSharp, Cancel } from "@material-ui/icons";
+import useAuth from "../../../hooks/useAuth";
 
 const NavBar = () => {
-  const { user, LogOut } = useFirebase();
+  const { user, LogOut } = useAuth();
   const [state, setState] = useState(false);
 
   const toggleDrawer = (open) => (event) => {
@@ -54,6 +52,7 @@ const NavBar = () => {
             className="navbar-brand me-auto"
             data-aos="fade-right"
             data-aos-offset="300"
+            data-aos-once="true"
             data-aos-easing="ease-in-sine"
             data-aos-delay="1300"
             data-aos-duration="1000"
@@ -157,7 +156,7 @@ const NavBar = () => {
                   Contact
                 </NavLink>
               </li>
-              {user?.email ? (
+              {user?.email && user.emailVerified ? (
                 <li className="nav-item dropdown">
                   <a
                     className="nav-link custom-dropdown-link"
@@ -174,15 +173,15 @@ const NavBar = () => {
                     aria-labelledby="navbarDropdown"
                   >
                     <li>
-                      <NavLink className="dropdown-item" to="/user-profile">
-                        Profile
+                      <NavLink className="dropdown-item" to="/user-dashboard">
+                        Dashboard
                       </NavLink>
                     </li>
                     <li>
                       <NavLink
                         onClick={LogOut}
                         className="dropdown-item"
-                        to="/"
+                        to="/user-login"
                       >
                         Logout
                       </NavLink>
@@ -190,14 +189,14 @@ const NavBar = () => {
                   </ul>
                 </li>
               ) : (
-                <NavLink className="" to="/user-login">
+                <a className="" href="/user-login">
                   <button
                     className="my-citi-lord-btn btn btn-default me-3"
                     type="submit"
                   >
                     Login
                   </button>
-                </NavLink>
+                </a>
               )}
             </ul>
           </div>

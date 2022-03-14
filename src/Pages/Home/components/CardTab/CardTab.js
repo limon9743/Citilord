@@ -29,7 +29,14 @@ const CardTab = (props) => {
       {/* Card Tab */}
 
       <TabContext value={value}>
-        <TabList onChange={handleChange}>
+        <TabList
+          onChange={handleChange}
+          TabIndicatorProps={{
+            style: {
+              backgroundColor: "#1ead01",
+            },
+          }}
+        >
           <Tab label="SHORT LET" value="1" className={classes.tabText} />
           <Tab label="LONG LET" value="2" className={classes.tabText} />
           <Tab label="SELL" value="3" className={classes.tabText} />
@@ -83,6 +90,7 @@ const CardTab = (props) => {
       {/* View All Property Button Start */}
       <div
         data-aos="zoom-in"
+        data-aos-once="true"
         className="cards-view-all-btns-div"
         //  style={{ display: "flex" }}
       >
@@ -98,7 +106,7 @@ const CardTab = (props) => {
           //   marginLeft: "20px",
           // }}
           >
-            View All Short Let Properties
+            View Short Let Properties
           </Button>
         </Link>
         <Link to="/all-properties/longlet" style={{ textDecoration: "none" }}>
@@ -114,7 +122,7 @@ const CardTab = (props) => {
           //   marginLeft: "20px",
           // }}
           >
-            View All Long Let Properties
+            View Long Let Properties
           </Button>
         </Link>
         <Link to="/all-properties/sell" style={{ textDecoration: "none" }}>
@@ -129,7 +137,7 @@ const CardTab = (props) => {
           //   marginLeft: "20px",
           // }}
           >
-            View All Sell Properties
+            View Sell Properties
           </Button>
         </Link>
         <Link to="/all-rooms" style={{ textDecoration: "none" }}>

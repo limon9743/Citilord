@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./ArrangeViewingForm.css";
 import { useForm } from "react-hook-form";
-import axios from "axios";
 
 const ArrangeViewingForm = () => {
   const {
@@ -13,19 +12,6 @@ const ArrangeViewingForm = () => {
     e.preventDefault();
     console.log(data);
     alert("Your viewing time has been set");
-
-    const requestedViewingInfo = {
-      date: data.date,
-      firstname: data.firstname,
-      lastname: data.lastname,
-      email: data.email,
-      contact: data.contact,
-    };
-
-    axios.post(
-      "http://localhost:3001/api/view/requestedviewing",
-      requestedViewingInfo
-    );
   };
 
   const [renderForm, setRenderForm] = useState(0);

@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 import "./Associations.css";
 import Slider from "react-slick";
+import companyLogo from "./companyLogo.png";
 
 const Associations = (props) => {
   const settings = {
@@ -17,92 +18,97 @@ const Associations = (props) => {
   };
   return (
     <div className="container association-container-extra">
-      <h2 className="text-center association-title">{props.name}</h2>
+      <h3 className="association-title">{props.name}</h3>
       <div className="py-5 d-flex">
-        <div className="associations-slide">
-          <img
-            src="https://citylord.lovesbd.com/static/media/My%20deposits.7de6aeda.png"
-            alt=""
-          />
+        <div
+          data-aos="zoom-in"
+          data-aos-once="true"
+          className="associations-slide"
+        >
+          <img src={companyLogo} alt="" />
         </div>
-        <div className="associations-slide">
-          <img
-            src="https://citylord.lovesbd.com/static/media/The%20property.ab85afa0.jpg"
-            alt=""
-          />
+        <div
+          data-aos="zoom-in"
+          data-aos-once="true"
+          className="associations-slide"
+        >
+          <img src={companyLogo} alt="" />
         </div>
 
-        <div className="associations-slide">
-          <img
-            src="https://citylord.lovesbd.com/static/media/My%20deposits.7de6aeda.png"
-            alt=""
-          />
+        <div
+          data-aos="zoom-in"
+          data-aos-once="true"
+          className="associations-slide"
+        >
+          <img src={companyLogo} alt="" />
         </div>
-        <div className="associations-slide">
-          <img
-            src="https://citylord.lovesbd.com/static/media/The%20property.ab85afa0.jpg"
-            alt=""
-          />
+        <div
+          data-aos="zoom-in"
+          data-aos-once="true"
+          className="associations-slide"
+        >
+          <img src={companyLogo} alt="" />
         </div>
-        <div className="associations-slide">
-          <img
-            src="https://citylord.lovesbd.com/static/media/Zoopla.c7c101e3.png"
-            alt=""
-          />
+        <div
+          data-aos="zoom-in"
+          data-aos-once="true"
+          className="associations-slide"
+        >
+          <img src={companyLogo} alt="" />
         </div>
       </div>
       {/* <Slider className="py-5" {...settings}>
         <div className="associations-slide">
           <img
-            src="https://citylord.lovesbd.com/static/media/My%20deposits.7de6aeda.png"
+            src=""
             alt=""
           />
         </div>
         <div className="associations-slide">
           <img
-            src="https://citylord.lovesbd.com/static/media/The%20property.ab85afa0.jpg"
+            src=""
             alt=""
           />
         </div>
         <div className="associations-slide">
           <img
-            src="https://citylord.lovesbd.com/static/media/Zoopla.c7c101e3.png"
+            src=""
             alt=""
           />
         </div>
         <div className="associations-slide">
           <img
-            src="https://citylord.lovesbd.com/static/media/Prime%20Location.0d989377.png"
+            src=""
             alt=""
           />
         </div>
         <div className="associations-slide">
           <img
-            src="https://citylord.lovesbd.com/static/media/Zoopla.c7c101e3.png"
+            src=""
             alt=""
           />
         </div>
         <div className="associations-slide">
           <img
-            src="https://citylord.lovesbd.com/static/media/The%20property.ab85afa0.jpg"
+            src=""
             alt=""
           />
         </div>
         <div className="associations-slide">
           <img
-            src="https://citylord.lovesbd.com/static/media/Zoopla.c7c101e3.png"
+            src=""
             alt=""
           />
         </div>
         <div className="associations-slide">
           <img
-            src="https://citylord.lovesbd.com/static/media/The%20property.ab85afa0.jpg"
+            src=""
             alt=""
           />
         </div>
         <div className="associations-slide">
           <img
-            src="https://citylord.lovesbd.com/static/media/Prime%20Location.0d989377.png"
+            src=""
             alt=""
           />
         </div>

@@ -1,0 +1,76 @@
+.profile-button {
+  background: rgb(30, 173, 1);
+  box-shadow: none;
+  border: none;
+}
+.user-profile-ver-main {
+  height: 40vh;
+}
+
+.user-profile-ver-main h2 {
+  text-align: center;
+}
+.user-dahboard-main {
+  display: flex;
+  justify-content: center;
+}
+.user-photo {
+  width: 150px !important;
+  height: 150px !important;
+  z-index: 1;
+}
+.user-photo::after {
+  content: "Upload Photo";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  color: white;
+  font-size: 16px;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 40%;
+  background: rgba(0, 0, 0, 0.726);
+  transition: 0.5s ease;
+}
+.user-photo:hover::after {
+  opacity: 1;
+}
+/* .photo-label h6 {
+  background-color: rgba(0, 0, 0, 0.548);
+  color: white;
+  padding: 25px;
+  margin-top: -50px;
+  border-radius: 50%;
+  z-index: 5 !important;
+} */
+.user-dashboard-container {
+  width: 70%;
+}
+.dashboard-left {
+  border-right: 1px solid rgb(206, 206, 206);
+}
+
+.profile-button:hover {
+  background: rgb(16, 99, 0);
+}
+
+.profile-button:focus {
+  background: rgb(30, 173, 1);
+  box-shadow: none;
+}
+
+.profile-button:active {
+  background: rgb(30, 173, 1);
+  box-shadow: none;
+}
+
+.back:hover {
+  color: rgb(30, 173, 1);
+  cursor: pointer;
+}
+
+.labels {
+  font-size: 11px;
+}

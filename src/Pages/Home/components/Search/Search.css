@@ -63,14 +63,19 @@
 }
 
 .search-input-button {
+  /* flex: 1; */
   height: 50px;
   border: none;
   font-weight: bold !important;
+  /* color: black !important; */
   border-radius: 10px !important;
   margin: 0px 5px !important;
+  /* background-color: #ffc400 !important; */
   border-radius: 10px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  text-transform: capitalize !important;
+  /* padding-left: 10px;
+  padding-left: 10px; */
+  /* margin-left: 50px; */
 }
 
 .search-input-button:hover {
